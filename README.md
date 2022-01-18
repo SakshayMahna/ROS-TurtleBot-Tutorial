@@ -1,2 +1,2 @@
-# ROS2-Navigation-Tutorial
-Code related to Navigation2 package of ROS2
+# ROS-TurtleBot-Tutorial
+Tutorial to run TurtleBot examples on ROS1 and ROS2

@@ -24,3 +24,6 @@ RUN sudo apt-get install -y ros-noetic-map-server
 RUN sudo apt-get install -y ros-noetic-amcl \
                             ros-noetic-move-base \
                             ros-noetic-dwa-local-planner
+
+# Install Text Editor
+RUN sudo apt-get install gedit

@@ -26,4 +26,4 @@ RUN sudo apt-get install -y ros-noetic-amcl \
                             ros-noetic-dwa-local-planner
 
 # Install Text Editor
-RUN sudo apt-get install gedit
+RUN sudo apt-get install -y gedit

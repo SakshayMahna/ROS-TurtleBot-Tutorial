@@ -53,7 +53,7 @@ The Docker Image can be installed in either of the two ways:
     ```bash
     roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
     ```
-5. Keep the terminal window running as such, and open a new tab on the terminal through `File -> New Terminal Tab`.
+5. Keep the terminal window running as such, and open a new tab on the terminal through `File -> New Tab`.
 6. On the new tab, first set the robot model (same as the one set in step 3) and then run the teleoperation node.
     ```bash
     # If the model selected was burger
@@ -63,6 +63,10 @@ The Docker Image can be installed in either of the two ways:
 7. Keeping this terminal tab as the active window, use the `W`, `A`, `D`, `X` and `S` keys to teleoperate the robot running in the simulation.
 
 **Note**: Practice running the robot using these commands, as it would be important for the next part of the tutorial.
+
+### Demo
+
+![Part 1](assets/p1.gif)
 
 ## Part 2 - Building Map using SLAM
 1. Start the Docker Container as given in the above instructions, and open the browser at the given link `127.0.0.1:6080`. An Ubuntu Environment can be seen having the folder `catkin_ws` on the Desktop.
@@ -103,6 +107,10 @@ The Docker Image can be installed in either of the two ways:
 
 **Note**: Building the map in this step is important, as the map would be used in the next step of the tutorial for Localization and Navigation.
 
+### Demo
+
+![Part 2](assets/p2.gif)
+
 ## Part 3 - Localization and Navigation
 1. Start the Docker Container as given in the above instructions, and open the browser at the given link `127.0.0.1:6080`. An Ubuntu Environment can be seen having the folder `catkin_ws` on the Desktop.
 
@@ -135,3 +143,7 @@ The Docker Image can be installed in either of the two ways:
     ```
 9. Move the robot forward and backward until the localization corrects itself in the RViz visualization. After doing so, the robot model and it's sensor readings would be correctly overlayed on the given map.
 10. The next step is Navigation. In the RViz window select the button on top that says `2D Nav Goal`. Click on the map to set the destination of the robot and drag the green arrow toward the direction where the robot will be facing. Once the arrow is set, the robot would start navigating to the goal.
+
+### Demo
+
+![Part 3](assets/p3.gif)

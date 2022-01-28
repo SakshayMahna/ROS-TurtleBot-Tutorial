@@ -21,7 +21,7 @@ RUN echo 'source ~/Desktop/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
 
 # Map Tutorial
 RUN sudo apt-get update
-RUN sudo apt-get install -y ros-dashing-cartographer-ros --fix-missing
+RUN sudo apt-get install -y ros-dashing-cartographer-ros
 RUN sudo apt-get install -y ros-dashing-nav2-map-server
 
 # Navigation Tutorial
@@ -30,3 +30,5 @@ RUN sudo apt-get install -y ros-dashing-navigation2 \
 
 # Install Text Editor
 RUN sudo apt-get install -y gedit
+
+EXPOSE 6080

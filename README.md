@@ -151,6 +151,8 @@ The Docker Image can be installed in either of the two ways:
 
 # ROS2 Dashing
 
+**Note**: Atleast on my computer, the VNC server for ROS2 takes some time to load, compared to ROS1. Stay patient and it will load eventually.
+
 ## Installation
 The Docker Image can be installed in either of the two ways:
 
@@ -185,15 +187,14 @@ The Docker Image can be installed in either of the two ways:
 
 2. Open a terminal, by click the button on lower left side > System Tools > LXTerminal.
 
-3. Through the terminal select the TurtleBot robot model. **Note**: For the ROS2 image it has been observed that the `burger` model of Turtlebot3 doesn't work. So please, avoid using it.
+3. Through the terminal select the TurtleBot robot model. **Note**: For the ROS2 image it has been observed that the `burger` and `waffle_pi` model of Turtlebot3 doesn't work. So please, avoid using it. Sometimes, the simulation may launch in the first time, closing it and running it again would work.
     ```bash
     # Either one of the below command would work
     export TURTLEBOT3_MODEL=waffle
-    export TURTLEBOT3_MODEL=waffle_pi
     ```
 4. Launch the simulation through the following command. After running this command, a new Gazebo window would open with the Turtlebot robot in an empty space.
     ```bash
-    ros2 launch turtlebot3_gazebo turtlebot3_empty_world.launch.py
+    ros2 launch turtlebot3_gazebo empty_world.launch.py
     ```
 5. Keep the terminal window running as such, and open a new tab on the terminal through `File -> New Tab`.
 6. On the new tab, first set the robot model (same as the one set in step 3) and then run the teleoperation node.
@@ -208,14 +209,14 @@ The Docker Image can be installed in either of the two ways:
 
 ### Demo
 
-![Part 1](assets/p1.gif)
+![Part 1](assets/p4.gif)
 
 ## Part 2 - Building Map using SLAM
 1. Start the Docker Container as given in the above instructions, and open the browser at the given link `127.0.0.1:6080`. An Ubuntu Environment can be seen having the folder `turtlebot3_ws` on the Desktop.
 
 2. Open a terminal, by click the button on lower left side > System Tools > LXTerminal.
 
-3. Through the terminal select the TurtleBot robot model. **Note**: For the ROS2 image it has been observed that the `burger` model of Turtlebot3 doesn't work. So please, avoid using it.
+3. Through the terminal select the TurtleBot robot model. **Note**: For the ROS2 image it has been observed that the `burger` model of Turtlebot3 doesn't work. So please, avoid using it. Sometimes, the simulation may launch in the first time, closing it and running it again would work.
     ```bash
     # Either one of the below command would work
     export TURTLEBOT3_MODEL=waffle
@@ -250,14 +251,14 @@ The Docker Image can be installed in either of the two ways:
 
 ### Demo
 
-![Part 2](assets/p2.gif)
+![Part 2](assets/p5.gif)
 
 ## Part 3 - Localization and Navigation
 1. Start the Docker Container as given in the above instructions, and open the browser at the given link `127.0.0.1:6080`. An Ubuntu Environment can be seen having the folder `turtlebot3_ws` on the Desktop.
 
 2. Open a terminal, by click the button on lower left side > System Tools > LXTerminal.
 
-3. Through the terminal select the TurtleBot robot model. **Note**: For the ROS2 image it has been observed that the `burger` model of Turtlebot3 doesn't work. So please, avoid using it.
+3. Through the terminal select the TurtleBot robot model. **Note**: For the ROS2 image it has been observed that the `burger` model of Turtlebot3 doesn't work. So please, avoid using it. Sometimes, the simulation may launch in the first time, closing it and running it again would work.
     ```bash
     # Either one of the below command would work
     export TURTLEBOT3_MODEL=waffle
@@ -286,4 +287,4 @@ The Docker Image can be installed in either of the two ways:
 
 ### Demo
 
-![Part 3](assets/p3.gif)
+![Part 3](assets/p6.gif)

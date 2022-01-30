@@ -13,8 +13,9 @@ The Docker Image can be installed in either of the two ways:
 
 - Pull the image (Beginners)
     ```bash
-    docker pull sakshaymahna/ros-turtlebot-tutorial:noetic
+    docker pull {GITHUB USERNAME}/ros-turtlebot-tutorial:noetic
     ```
+    where your `{GITHUB USERNAME}` is in all *lower case* like `sakshaymahna`
 
 - Build the image (Intermediate)
     ```bash
@@ -25,7 +26,7 @@ The Docker Image can be installed in either of the two ways:
 1. Start the Docker Engine on your respective OS
 2. Start the Docker Container (One time step only, from next time onwards use step 5)
     ```bash
-    docker run --name tutorial -p 6080:80 --shm-size=512m sakshaymahna/ros-turtlebot-tutorial:noetic
+    docker run --name tutorial -p 6080:80 --shm-size=512m {GITHUB USERNAME}/ros-turtlebot-tutorial:noetic
     ```
 3. Go to the URL on your browser `127.0.0.1:6080`. 
 4. Stopping the container after completing the work
@@ -149,16 +150,18 @@ The Docker Image can be installed in either of the two ways:
 ![Part 3](assets/p3.gif)
 
 
+---
+
 # ROS2 Dashing
 
-**Note**: Atleast on my computer, the VNC server for ROS2 takes some time to load, compared to ROS1. Stay patient and it will load eventually.
+> :warning:  The VNC server for ROS2 may take some time to load, compared to ROS1. Please be patient.
 
 ## Installation
 The Docker Image can be installed in either of the two ways:
 
 - Pull the image (Beginners)
     ```bash
-    docker pull sakshaymahna/ros-turtlebot-tutorial:dashing
+    docker pull {GITHUB USERNAME}/ros-turtlebot-tutorial:dashing
     ```
 
 - Build the image (Intermediate)
@@ -170,7 +173,7 @@ The Docker Image can be installed in either of the two ways:
 1. Start the Docker Engine on your respective OS
 2. Start the Docker Container (One time step only, from next time onwards use step 5)
     ```bash
-    docker run --name tutorial -p 6080:80 --shm-size=512m sakshaymahna/ros-turtlebot-tutorial:dashing
+    docker run --name tutorial -p 6080:80 --shm-size=512m {GITHUB USERNAME}/ros-turtlebot-tutorial:dashing
     ```
 3. Go to the URL on your browser `127.0.0.1:6080`. 
 4. Stopping the container after completing the work

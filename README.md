@@ -1,4 +1,7 @@
 # ROS-TurtleBot-Tutorial
+
+**YouTube Video** This tutorial is in correspondance to the Lecture: Introduction to ROS. [Click here](https://youtu.be/98AcSbtm2tI) to watch the video.
+
 This is a tutorial to run TurtleBot examples on ROS1 and ROS2 using a self-contained Docker environment provided via this repository. We explain two modes of navigation: teleopreation using the keyboard and setting a goal via the RViz UI. These tutorials can easily be extended for autonomous navigation too but for the scope of this tutorial, we will only discuss the above mentioned modes of navigation.
 
 ## Prerequisites
